@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MyorderComponent } from './myorder/myorder.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthenticateService } from './authenticate.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ]),
    
   ],
-  providers: [],
+  providers:[AuthenticateService] ,
   bootstrap: [AppComponent]
 })
 export class AppModule { }
